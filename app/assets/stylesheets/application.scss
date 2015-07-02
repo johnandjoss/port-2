@@ -9,8 +9,9 @@ html, body {
 }
 
 body {
-	padding: 60px;
+	padding-top: 60px;
 	font-family: 'EB Garamond', serif;
+	background: #fff;
 }
 
 #notice {
@@ -21,22 +22,58 @@ ul {
 	list-style: none;
 }
 
+.navbar-inverse {
+	background-color: #A3ABAF;
+	border: none;
+}
 
+.navbar-header a.navbar-brand {
+  color: #fff
+}
+.navbar-inverse .navbar-nav > li > a {
+  color:#fff;
+ 
+}
 /*--------- home page styling ------------*/
 
 .main-title {
 	font-size: 90px;
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
+	color:  #B22E2F;
 }
 .sub-title {
 	font-size: 32px;
 	text-transform: uppercase;
 	font-family: 'EB Garamond', serif;
+	color: #1B2B32;
 }
 
+.skill-display a {
+	font-size: 20px;
+	display: inline-block;
+	padding-top: 10px;
+	color: #37646F;
+}
+.skill-display a:hover {
+	color: #1B2B32;
+}
 
-
+.skill-display {
+	text-align: center;
+}
+.links {
+	font-size: 26px;
+	text-transform: uppercase;
+	font-family: 'EB Garamond', serif;
+	color:   #37646F;	
+}
+.links a {
+	color: #37646F;	
+}
+.links a:hover {
+	color: #1B2B32;	
+}
 /*--------- skill page styling ------------*/
 
 

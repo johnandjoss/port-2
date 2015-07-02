@@ -12,9 +12,9 @@
 
 	
 	  <% @skills.each do |skill| %>
-	     <div class="col-md-3"><img class="responsive center-block" src="http://placehold.it/200x200" alt="skill-picture"><%= link_to skill.name, skill_path(skill) %></div>
+	     <div class="col-md-3 skill-display"><img class="responsive center-block" src="http://placehold.it/200x200" alt="skill-picture"><%= link_to skill.name, skill_path(skill) %></div>
 	  <% end %>
 
 
-	<p><%= link_to "Add a Skill", new_skill_path %></p>
+	<p class="links"><%= link_to "Add a Skill", new_skill_path %></p>
 </div><!-- end of main container -->
