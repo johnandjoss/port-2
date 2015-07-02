@@ -1,12 +1,20 @@
 <% content_for :title, "Joss Monster | Home" %>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="main-title">Joss Monster</h1>
+			<h3 class="sub-title">Skills</h3>
+		</div><!-- end of col-12 -->
+	</div><!-- end of row 1 -->
+	<div class="row">
+		
+	</div><!-- end of row 2 -->
+
+	
+	  <% @skills.each do |skill| %>
+	     <div class="col-md-3"><img class="responsive center-block" src="http://placehold.it/200x200" alt="skill-picture"><%= link_to skill.name, skill_path(skill) %></div>
+	  <% end %>
 
 
-<h1>Skills</h1>
-
-<ul>
-  <% @skills.each do |skill| %>
-    <li><%= link_to skill.name, skill_path(skill) %></li>
-  <% end %>
-</ul>
-
-<p><%= link_to "Add a Skill", new_skill_path %></p>
+	<p><%= link_to "Add a Skill", new_skill_path %></p>
+</div><!-- end of main container -->

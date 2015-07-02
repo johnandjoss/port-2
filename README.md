@@ -17,29 +17,29 @@
 
 <h3>CONFIGURATION</h3>
 <p>Initial set-up:
-		- create file called .railsrc in home directory and add line -d postgresql -T
-		- rails new app-name -d postgresql -T   (for testing purposes)</p>
-	<ul>Gems:
-		<li>gem 'rails', '4.2.1'</li>
-		<li>gem 'pg'</li>
-		<li>gem 'sass-rails'</li>
-		<li>gem 'bootstrap-sass'</li>
-		<li>gem 'uglifier', '>= 1.3.0'</li>
-		<li>gem 'coffee-rails', '~> 4.1.0'</li>
-		<li>gem 'jquery-rails'</li>
-		<li>gem 'turbolinks'</li>
-		<li>gem 'pry'</li>
-		<li><em>development</em></li>
-	  <li>gem 'byebug'</li>
-	  <li>gem 'web-console', '~> 2.0'</li>
-	  <li>gem 'spring'</li>
-	  <li>gem 'quiet_assets'</li>
-		<li><em>test, development</em>
-	  <li>gem 'rspec-rails'</li>
-	  <li>gem 'launchy'</li>
-		<li><em>test</em></li>
-	  <li>gem 'shoulda-matchers'</li>
-	 	<li>gem 'capybara'</li>
+		<p>create file called .railsrc in home directory and add line -d postgresql -T </p>
+		<p>rails new app-name -d postgresql -T   (for testing purposes)</p>
+
+		gem 'rails', '4.2.1'
+		gem 'pg'
+		gem 'sass-rails'
+		gem 'bootstrap-sass'
+		gem 'uglifier', '>= 1.3.0'
+		gem 'coffee-rails', '~> 4.1.0'
+		gem 'jquery-rails'
+		gem 'turbolinks'
+		gem 'pry'
+		<em>development</em>
+	  gem 'byebug'
+	  gem 'web-console', '~> 2.0'
+	  gem 'spring'
+	  gem 'quiet_assets'
+		<em>test, development</em>
+	  gem 'rspec-rails'
+	  gem 'launchy'
+		<em>test</em>
+	  gem 'shoulda-matchers'
+	 	gem 'capybara'
 
 <h3>Database creation</h3>
 <p>ActiveRecord</p>

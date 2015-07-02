@@ -1,5 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond|Dancing+Script);
+
+
+/*-------- base site styling ------------*/
+html, body {
+	height: 100%;
+}
+
+body {
+	padding: 60px;
+	font-family: 'EB Garamond', serif;
+}
 
 #notice {
 	color: red;
@@ -8,3 +20,26 @@
 ul {
 	list-style: none;
 }
+
+
+/*--------- home page styling ------------*/
+
+.main-title {
+	font-size: 90px;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+}
+.sub-title {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: 'EB Garamond', serif;
+}
+
+
+
+/*--------- skill page styling ------------*/
+
+
+
+
+/*--------- project page styling ------------*/
