@@ -9,6 +9,7 @@ describe "the add a skill process" do
     click_on 'Create Skill'
     expect(page).to have_content 'Skills'
   end
+  
   it "gives an error when no data is entered into form fields" do
     visit new_skill_path
     click_on 'Create Skill'
