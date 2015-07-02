@@ -21,6 +21,20 @@ class ProjectsController < ApplicationController
 	  end
 	end
 
+	def edit
+    @skill = Skill.find(params[:skill_id])
+    @project = Project.find(params[:id])
+  end
+
+  def update
+    @skill = Skill.find(params[:skill_id])
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      redirect_to skill_project_path(@skill, @project)
+    else
+      render :edit
+    end
+  end
 
   private
   def project_params
