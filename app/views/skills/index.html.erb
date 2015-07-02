@@ -1,3 +1,12 @@
 <% content_for :title, "Joss Monster | Home" %>
 
 
+<h1>Skills</h1>
+
+<ul>
+  <% @skills.each do |skill| %>
+    <li><%= link_to skill.name, skill_path(skill) %></li>
+  <% end %>
+</ul>
+
+<p><%= link_to "Add a Skill", new_skill_path %></p>
