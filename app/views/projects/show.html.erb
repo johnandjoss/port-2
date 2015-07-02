@@ -1,14 +1,18 @@
 <% content_for :title, "Joss Monster | Project Page" %>
-
-<h1 class="main-title"><%= @project.title %></h1>
-
-<p>Content: <%= @project.content %></p>
-
-<p>Link: <%= @project.link %></p>
-
-<p class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></li>
-<p class="btn-default"><%= link_to "Delete", skill_project_path(@skill, @project),
-                    :data => {:confirm => "Confirm?",
-                    :method => "delete"} %></p>
-
-
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="main-title"><%= @project.title %></h1>
+		</div><!-- end of col-12 --> 
+	</div><!-- end of row 1 -->
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<p>Content: <%= @project.content %></p>
+			<p>Link: <%= @project.link %></p>
+			<p class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></p>
+			<p class="btn-default"><%= link_to "Delete", skill_project_path(@skill, @project),
+			                    :data => {:confirm => "Confirm?",
+			                    :method => "delete"} %></p>
+		</div><!-- end of col offset -->
+	</div><!-- end of row 2-->
+</div><!-- end of container -->
