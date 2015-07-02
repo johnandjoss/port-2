@@ -1,6 +1,6 @@
 <% content_for(:title, "Joss Monster | Skill") %>
 
-<h1><%= @skill.name %></h1>
+<h1 class="main-title"><%= @skill.name %></h1>
 
 
 
@@ -12,16 +12,16 @@
 
 
 <% if @skill.projects.any? %>
-  <h4>Here are the projects for this skill:</h4>
+  <h4 class="sub-title">Related Projects:</h4>
 
-  <ul>
+  <ul class="project-list">
     <% @skill.projects.each do |project| %>
-      <li>
+      <li class="project-items">
         <%= link_to project.title, skill_project_path(@skill, project)%>
-        <%= link_to "Edit", edit_skill_project_path(@skill, project) %>
-        <%= link_to "Delete", skill_project_path(@skill, project),
+        <span class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, project) %></span>
+        <span class="btn-default"><%= link_to "Delete", skill_project_path(@skill, project),
                                  :data => {:confirm => "Are you sure?",
-                                                :method => "delete"} %>
+                                                :method => "delete"} %></span>
       </li>
     <% end %>
   </ul>

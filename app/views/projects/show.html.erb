@@ -1,13 +1,13 @@
 <% content_for :title, "Joss Monster | Project Page" %>
 
-<h1><%= @project.title %></h1>
+<h1 class="main-title"><%= @project.title %></h1>
 
 <p>Content: <%= @project.content %></p>
 
 <p>Link: <%= @project.link %></p>
 
-<p><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></li>
-<p><%= link_to "Delete", skill_project_path(@skill, @project),
+<p class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></li>
+<p class="btn-default"><%= link_to "Delete", skill_project_path(@skill, @project),
                     :data => {:confirm => "Confirm?",
                     :method => "delete"} %></p>
 

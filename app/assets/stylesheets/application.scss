@@ -34,6 +34,18 @@ ul {
   color:#fff;
  
 }
+
+.btn-default {
+	background-color: #A3ABAF;
+	border: .08em solid #37646F;
+	border-radius: 3px;
+	
+}
+span.btn-default a {
+	color: #ffffff;
+	text-align: center;
+	padding: 6px;
+}
 /*--------- home page styling ------------*/
 
 .main-title {
@@ -76,7 +88,27 @@ ul {
 }
 /*--------- skill page styling ------------*/
 
+.project-list {
+	font-size: 20px;
+	
+}
 
-
+.project-items a {
+	padding-right: 20px;
+	color: #37646F;
+}
+.project-items a:hover {
+	color: #1B2B32;	
+}
 
 /*--------- project page styling ------------*/
+
+
+
+/*--------- form styles ---------------------*/
+.form-titles {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: 'EB Garamond', serif;
+	color: #1B2B32;
+}
