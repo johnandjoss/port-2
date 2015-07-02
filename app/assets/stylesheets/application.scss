@@ -43,10 +43,13 @@ ul {
 	padding: 3px;
 	
 }
-span.btn-default a {
+p.btn-default a {
 	color: #ffffff;
 	text-align: center;
 	padding: 6px;
+}
+p.btn-default {
+	margin-right: 7px;
 }
 /*--------- home page styling ------------*/
 
@@ -88,6 +91,11 @@ span.btn-default a {
 .links a:hover {
 	color: #1B2B32;	
 }
+
+.col-md-3.skill-display {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 /*--------- skill page styling ------------*/
 
 .project-list {
@@ -101,6 +109,9 @@ span.btn-default a {
 }
 .project-items a:hover {
 	color: #1B2B32;	
+}
+.skill-description {
+	font-size: 20px;
 }
 
 /*--------- project page styling ------------*/
