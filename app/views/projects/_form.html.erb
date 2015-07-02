@@ -1,0 +1,13 @@
+<%= render "layouts/errors", :object => @project %>
+
+<%= form_for [@skill, @project] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+  <%= f.label :skill_id %>
+  <%= f.collection_select :skill_id, Skill.all, :id, :name, :selected => @skill.id%>
+  <%= f.submit %>
+<% end %>

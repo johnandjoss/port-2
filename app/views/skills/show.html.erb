@@ -17,8 +17,7 @@
   <ul>
     <% @skill.projects.each do |project| %>
       <li>
-        <%= project.title %>
-
+        <%= link_to project.title, skill_project_path(@skill, project)%>
         <%= link_to "Edit", edit_skill_project_path(@skill, project) %>
         <%= link_to "Delete", skill_project_path(@skill, project),
                                  :data => {:confirm => "Are you sure?",
