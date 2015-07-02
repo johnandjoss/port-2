@@ -1,5 +1,5 @@
-== README
-<h3>#Portfolio-Rails | Joss Monster</h3><br>
+#README
+<h3>Portfolio-Rails | Joss Monster</h3><br>
 
 <p>This app is the initial basic stucture for a personal portfolio site. It is currently in process and this is not the final version.</P>
 
@@ -17,8 +17,8 @@
 
 <h3>CONFIGURATION</h3>
 <p>Initial set-up:
-		<p>create file called .railsrc in home directory and add line -d postgresql -T </p>
-		<p>rails new app-name -d postgresql -T   (for testing purposes)</p>
+<p>create file called .railsrc in home directory and add line -d postgresql -T </p>
+<p>rails new app-name -d postgresql -T   (for testing purposes)</p>
 
 		gem 'rails', '4.2.1'
 		gem 'pg'
@@ -29,15 +29,15 @@
 		gem 'jquery-rails'
 		gem 'turbolinks'
 		gem 'pry'
-		<em>development</em>
+		-development
 	  gem 'byebug'
 	  gem 'web-console', '~> 2.0'
 	  gem 'spring'
 	  gem 'quiet_assets'
-		<em>test, development</em>
+		-test, development
 	  gem 'rspec-rails'
 	  gem 'launchy'
-		<em>test</em>
+		-test
 	  gem 'shoulda-matchers'
 	 	gem 'capybara'
 
