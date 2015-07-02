@@ -36,6 +36,13 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def destroy
+    @skill = Skill.find(params[:skill_id])
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to skill_path(@skill)
+  end
+  
   private
   def project_params
     params.require(:project).permit(:title, :content, :link, :skill_id)
