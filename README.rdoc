@@ -1,28 +1,70 @@
 == README
+#Portfolio-Rails | Joss Monster
+This app is the initial basic stucture for a personal portfolio site. It is currently in process and this is not the final version.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* RUBY VERSION: 
+	* Ruby '2.2.0'
 
-Things you may want to cover:
+* SYSTEM DEPENDENCIES:
 
-* Ruby version
+	* Ruby installed
+	* Rails '4.2.1'
+	* Postgres/psql
+	* Capybara
+	* rspec
 
-* System dependencies
 
 * Configuration
+	* Initial set-up:
+		- create file called .railsrc in home directory and add line -d postgresql -T
+		- rails new app-name -d postgresql -T   (for testing purposes)
+	* Gems:
+		gem 'rails', '4.2.1'
+		gem 'pg'
+		gem 'sass-rails'
+		gem 'bootstrap-sass'
+		gem 'uglifier', '>= 1.3.0'
+		gem 'coffee-rails', '~> 4.1.0'
+		gem 'jquery-rails'
+		gem 'turbolinks'
+		gem 'pry'
+	group :development do
+	  gem 'byebug'
+	  gem 'web-console', '~> 2.0'
+	  gem 'spring'
+	  gem 'quiet_assets'
+	end
+
+	group :test, :development do
+	  gem 'rspec-rails'
+	  gem 'launchy'
+	end
+
+	group :test do
+	  gem 'shoulda-matchers'
+	  gem 'capybara'
+	end
+
 
 * Database creation
+	* ActiveRecord
+	* Postgres -See Schema for migration details
 
 * Database initialization
+	- rake DB:create:all
+	- rake DB:migrate
+
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+	- rails generate rspec:install
+	- 'rspec'
+	* In rails_helper: require 'spec_helper', require 'rspec/rails', require 'capybara/rails'
 
 
-Please feel free to use a different markup language if you do not plan to run
+
+
+* MIT License. Copyright 2015 Jocelyn Alsdorf
+
+
+
 <tt>rake doc:app</tt>.
