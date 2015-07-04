@@ -67,6 +67,7 @@ p.btn-default {
 	text-transform: uppercase;
 	font-family: 'EB Garamond', serif;
 	color: #B22E2F;
+	text-align: center;
 }
 
 .skill-display a {
@@ -97,7 +98,7 @@ p.btn-default {
 
 .col-md-3.skill-display {
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 22px;
 }
 
 .monster-img {
@@ -132,4 +133,10 @@ p.btn-default {
 	text-transform: uppercase;
 	font-family: 'EB Garamond', serif;
 	color: #B22E2F;
+}
+
+/*---------- all skills styling ---------------*/
+
+.all-skills-div {
+	margin-bottom: 30px;
 }

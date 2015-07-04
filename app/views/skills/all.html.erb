@@ -13,13 +13,13 @@
 		</div><!-- end of col-12 -->
 	</div><!-- end of row 1 -->
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-12 all-skills-div">
 	  <% @skills.each do |skill| %>
 	     <div class="col-md-3 skill-display"><img class="responsive center-block" src="http://placehold.it/200x200" alt="skill-picture"><%= link_to skill.name, skill_path(skill) %></div>
 	  <% end %>
 
-		<button class="links left-link"><%= link_to "Add a Skill", new_skill_path %></button>
-		<button class="links right-link" id="all-skills"><%= link_to "All Skills",all_skills_path %></button>
+		<button class="links left-link"><%= link_to "Back Home", skills_path %></button>
+		</button>
 		</div><!-- end of 2nd col 12 -->
 	</div><!-- end of row 2 -->
 </div><!-- end of main container -->
