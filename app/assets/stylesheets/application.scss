@@ -51,6 +51,9 @@ p.btn-default a {
 p.btn-default {
 	margin-right: 7px;
 }
+.bottom-pad {
+	padding-bottom: 30px;
+}
 /*--------- home page styling ------------*/
 
 .main-title {
@@ -102,7 +105,9 @@ p.btn-default {
   width: auto;
   margin-left: 60px;
 }
-
+.right-link {
+	float:right;
+}
 /*--------- skill page styling ------------*/
 
 .project-list {

@@ -2,6 +2,7 @@ class SkillsController < ApplicationController
 
  def index
     @skills = Skill.limit(4).order("created_at DESC")
+
   end
 
   def show

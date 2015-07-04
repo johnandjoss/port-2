@@ -4,7 +4,7 @@ require 'rails_helper'
 describe "the edit skill process" do
   it "updates a skill" do
     visit skills_path
-    click_on 'Add a Skill'
+    click_link 'Add a Skill'
     fill_in 'Name', :with => 'java'
     fill_in 'Description', :with => 'java for droid'
     click_on 'Create Skill'

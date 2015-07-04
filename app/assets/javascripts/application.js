@@ -15,3 +15,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	$('#all-skills').click(function(){
+		alert("put modal with all skills-with links-here???");
+	});
+
+
+});
