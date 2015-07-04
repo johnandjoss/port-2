@@ -1,4 +1,4 @@
-<% content_for :title, "Joss Monster | Home" %>
+<% content_for :title, "Joss Monster | All Skills" %>
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
@@ -9,7 +9,7 @@
 			<div class="monster-img"><%= image_tag("monster2.png", :alt => "monster") %></div>
 			<div class="monster-img"><%= image_tag("monster3.png", :alt => "monster") %></div>
 
-			<h3 class="sub-title">Skills</h3>
+			<h3 class="sub-title">All Skills</h3>
 		</div><!-- end of col-12 -->
 	</div><!-- end of row 1 -->
 	<div class="row">
@@ -19,7 +19,7 @@
 	  <% end %>
 
 		<button class="links left-link"><%= link_to "Add a Skill", new_skill_path %></button>
-		<button class="links right-link" id="all-skills"><%= link_to "All Skills", all_skills_path %></button>
+		<button class="links right-link" id="all-skills"><%= link_to "All Skills",all_skills_path %></button>
 		</div><!-- end of 2nd col 12 -->
 	</div><!-- end of row 2 -->
 </div><!-- end of main container -->

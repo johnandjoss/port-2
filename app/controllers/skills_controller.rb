@@ -41,6 +41,9 @@ class SkillsController < ApplicationController
     @skill.destroy
     redirect_to skills_path
   end
+  def all 
+    @skills = Skill.all
+   end 
 
   private
   def skill_params
