@@ -8,11 +8,12 @@
 	<p><%= @post.body %></p>
 	<p>By: <%= @post.user.name %></p>
 
-<p><%= link_to "Edit", edit_post_path(@post) %></p>
-<p><%= link_to "Delete Post", post_path(@post),
+<% if current_user && current_user.admin? %>
+	<p><%= link_to "Edit", edit_post_path(@post) %></p>
+	<p><%= link_to "Delete Post", post_path(@post),
                           :data => {:confirm => "Confirm?",
                           :method => "delete"} %></p>
-
+<% end %>
 
 <div class="comments">
 	

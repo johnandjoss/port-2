@@ -10,11 +10,13 @@
       <div class="skill-description-area">
         <p class="skill-description"><%= @skill.description %></p>
       </div>
-      <p class="btn-default"><%= link_to "Edit Skill", edit_skill_path(@skill) %></p>
-      <p class="btn-default"><%= link_to "Delete Skill", skill_path(@skill),
-                          :data => {:confirm => "Confirm?",
-                          :method => "delete"} %></p>
-
+      <% if current_user && current_user.admin? %>
+        <p class="btn-default"><%= link_to "Edit Skill", edit_skill_path(@skill) %></p>
+        <p class="btn-default"><%= link_to "Delete Skill", skill_path(@skill),
+                            :data => {:confirm => "Confirm?",
+                            :method => "delete"} %></p>
+      <% end %>   
+                       
       <% if @skill.projects.any? %>
         <h4 class="sub-title">Related Projects:</h4>
 
@@ -30,7 +32,10 @@
         <p>There are no projects yet!</p>
       <% end %>
 
+      <% if current_user && current_user.admin? %>
       <p><%= link_to "Add a Project", new_skill_project_path(@skill) %></p>
+      <% end %>
+
       <p><%= link_to "Return to skills", skills_path %></p>
     </div><!-- end of col offset -->
   </div><!-- end of row 2 -->

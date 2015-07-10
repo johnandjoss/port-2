@@ -1,7 +1,7 @@
 <% content_for :title, "Space Show | Comment" %>
 
 <%= @comment.content %>
-<% if user_signed_in? %>
+<% if current_user && current_user.admin? %>
 	<p><%= link_to "Edit", edit_post_comment_path(@post, @comment) %></p>
 	<p><%= link_to "Delete Comment", post_comment_path(@post, @comment), method: 
 										:delete, data: {confirm: "Are you sure?"} %></p>

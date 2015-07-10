@@ -9,8 +9,10 @@
  <p><%= pluralize(post.comments.count, "Comment") %></p>
  <% end %>
 
-
-<%= link_to "Add Post", new_post_path %>
+<% if current_user && current_user.admin? %>
+	<%= link_to "Add Post", new_post_path %>
+<% end %>
+	
 <%= link_to "Home", skills_path %>
 		</div><!-- end of col-12 -->
 	</div><!-- end of row -->

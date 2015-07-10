@@ -9,10 +9,14 @@
 		<div class="col-lg-8 col-lg-offset-2">
 			<p>Content: <%= @project.content %></p>
 			<p>Link: <%= @project.link %></p>
-			<p class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></p>
-			<p class="btn-default"><%= link_to "Delete", skill_project_path(@skill, @project),
-			                    :data => {:confirm => "Confirm?",
-			                    :method => "delete"} %></p>
+
+			<% if current_user && current_user.admin? %>
+				<p class="btn-default"><%= link_to "Edit", edit_skill_project_path(@skill, @project) %></p>
+				<p class="btn-default"><%= link_to "Delete", skill_project_path(@skill, @project),
+				                    :data => {:confirm => "Confirm?",
+				                    :method => "delete"} %></p>
+		  <% end %>
+		  
 		</div><!-- end of col offset -->
 	</div><!-- end of row 2-->
 </div><!-- end of container -->
