@@ -8,6 +8,18 @@ FactoryGirl.define do
     
   end
 
+  factory(:skill) do
+    name('reading')
+    description('books')
+
+  end  
+
+  factory(:project) do
+    title('my fav')
+    content('some stuff')
+    link('www.fake.com')
+
+  end  
 
   factory(:post) do
     title('fake post')
