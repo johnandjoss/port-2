@@ -3,6 +3,8 @@
 
 <p>This app is the initial basic stucture for a personal portfolio site. It is currently in process and this is not the final version.</P>
 
+<h1>Attn MIKE: To sign in as admin you must sign up with name "jocelyn alsdorf"</h1>
+
 <h3>RUBY VERSION <h3>
 <p>Ruby '2.2.0'</p>
 
