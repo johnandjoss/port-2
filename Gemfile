@@ -10,7 +10,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'pry'
-
+gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
+gem 'devise', '~> 3.4.1'
 
 
 group :development do
@@ -28,4 +29,6 @@ end
 group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'simplecov', require: false
 end
