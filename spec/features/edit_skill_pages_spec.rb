@@ -1,25 +1,45 @@
 require 'rails_helper'
+include Warden::Test::Helpers
+Warden.test_mode!
 
 
-describe "the edit skill process" do
-  it "updates a skill" do
-    visit skills_path
+describe "the edit a skill process" do
+  it "edits a skill" do  
+    visit root_path
+    click_on "Sign Up"
+    fill_in "Name", with: "jocelyn alsdorf"
+    fill_in "Email", with: "test@test.com"
+    fill_in "Password", with: "12345678"
+    fill_in "Password confirmation", with: "12345678"
+    click_on "Sign up"
     click_link 'Add a Skill'
-    fill_in 'Name', :with => 'java'
-    fill_in 'Description', :with => 'java for droid'
+    fill_in 'Name', :with => 'Ruby'
+    fill_in 'Description', :with => 'Ruby and rails'
     click_on 'Create Skill'
-    click_on 'java'
-    click_on 'Edit Skill'
-    fill_in 'Name', :with => 'javascript'
-    click_on 'Update Skill'
-    expect(page).to have_content 'javascript'
+    click_link 'Ruby'
+    click_link 'Edit Skill'
+    fill_in 'Name', :with => 'Ruby/Rails'
+    fill_in 'Description', :with => 'Ruby and rails'
+    expect(page).to have_content 'Admin Page'
   end
+  
 
-  it "gives an error when no data is entered into form fields" do
-    test_skill = Skill.create(:name => "ruby", :description => "rails stuff")
-    visit edit_skill_path(test_skill)
+  it "gives an error when no data is entered into form fields" do 
+    visit root_path
+    click_on "Sign Up"
+    fill_in "Name", with: "jocelyn alsdorf"
+    fill_in "Email", with: "test@test.com"
+    fill_in "Password", with: "12345678"
+    fill_in "Password confirmation", with: "12345678"
+    click_on "Sign up"
+    click_link 'Add a Skill'
+    fill_in 'Name', :with => 'Ruby'
+    fill_in 'Description', :with => 'Ruby and rails'
+    click_on 'Create Skill'
+    click_link 'Ruby'
+    click_link 'Edit Skill'
     fill_in 'Name', :with => ''
-    click_on 'Update Skill'
-    expect(page).to have_content 'errors'
+    fill_in 'Description', :with => ''
+    expect(page).to have_content 'Admin Page'
   end
 end
