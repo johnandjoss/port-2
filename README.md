@@ -3,18 +3,23 @@
 
 <p>This app is the initial basic stucture for a personal portfolio site. It is currently in process and this is not the final version.</P>
 
-<h1>Attn MIKE: To sign in as admin you must sign up with name "jocelyn alsdorf"</h1>
 
-<h3>RUBY VERSION <h3>
+
+<h2><em>Attn Mike: To sign in as admin you must sign up with name "jocelyn alsdorf" (email joss@test.com)<em></h2>
+<h3>Heroku link: https://radiant-depths-9000.herokuapp.com/ </h3>
+
+<h4>RUBY VERSION <h4>
 <p>Ruby '2.2.0'</p>
 
-<h3>SYSTEM DEPENDENCIES</h3>
+<h4>SYSTEM DEPENDENCIES</h4>
 
 <p>Ruby installed</p>
 <p>Rails '4.2.1'</p>
 <p>Postgres/psql</p>
-<p>apybara</p>
+<p>capybara</p>
 <p>rspec</p>
+
+
 
 
 <h3>CONFIGURATION</h3>
@@ -31,6 +36,9 @@
 		gem 'jquery-rails'
 		gem 'turbolinks'
 		gem 'pry'
+		gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
+		gem 'devise', '~> 3.4.1'
+		gem 'rails_12factor'
 		-development
 	  gem 'byebug'
 	  gem 'web-console', '~> 2.0'
@@ -42,6 +50,8 @@
 		-test
 	  gem 'shoulda-matchers'
 	 	gem 'capybara'
+	 	gem "factory_girl_rails", "~> 4.0"
+  	gem 'simplecov', require: false
 
 <h3>Database creation</h3>
 <p>ActiveRecord</p>
