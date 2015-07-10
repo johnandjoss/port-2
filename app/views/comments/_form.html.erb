@@ -1,0 +1,14 @@
+<%= render "layouts/errors", :object => @post %>
+<div class="container">
+<h3>Leave a Comment</h3>
+
+
+<%= form_for [@post, @post.comments.build] do |f| %>
+	<%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+
+</div>
+

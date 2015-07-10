@@ -6,6 +6,7 @@
 <h2>All Posts</h2>
  <% @posts.each do |post| %>
  <h4><%= link_to post.title, post_path(post) %></h4>
+ <p><%= pluralize(post.comments.count, "Comment") %></p>
  <% end %>
 
 

@@ -4,7 +4,7 @@
 	<div class="col-lg-12">
 
 	<h3><%= @post.title %></h3>
-
+	<img class="responsive center-block" src="http://placehold.it/400x400" alt="post-picture">
 	<p><%= @post.body %></p>
 	<p>By: <%= @post.user.name %></p>
 
@@ -12,6 +12,18 @@
 <p><%= link_to "Delete Post", post_path(@post),
                           :data => {:confirm => "Confirm?",
                           :method => "delete"} %></p>
+
+
+<div class="comments">
+	
+
+<h4 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h4>
+				<% @comments.each do |comment| %>
+				<p class="comment-name"><%= comment.user.name %></p>
+				<p><%= link_to comment.content, post_comment_path(@post, comment) %></p>
+				<% end %>
+				<%= render 'comments/form' %>
+</div>
 
 
 <p><%= link_to "All Posts", posts_path %></p>
