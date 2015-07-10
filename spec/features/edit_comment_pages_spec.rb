@@ -3,8 +3,8 @@ include Warden::Test::Helpers
 Warden.test_mode!
 
 
-describe "the add a comment process" do
-  it "adds a new comment to a post" do  
+describe "the edit a comment process" do
+  it "edit a new comment to a post" do  
     visit skills_path
     user = FactoryGirl.create(:user)
     login_as(user, :scope => :user)
