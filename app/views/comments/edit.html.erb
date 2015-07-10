@@ -1,0 +1,13 @@
+<% content_for :title, "Joss Monster | Edit Comment" %>
+
+<h1 class="form-titles">Edit  Comment</h1>
+
+<%= form_for  [@post, @comment] do |f| %>
+	<%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back", root_path %>
+
+
