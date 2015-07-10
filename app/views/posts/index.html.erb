@@ -1,5 +1,16 @@
 <% content_for :title, "Joss Monster | Blog" %>
 
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+<h2>All Posts</h2>
+ <% @posts.each do |post| %>
+ <h4><%= link_to post.title, post_path(post) %></h4>
+ <% end %>
 
 
-index posts
+<%= link_to "Add Post", new_post_path %>
+<%= link_to "Home", skills_path %>
+		</div><!-- end of col-12 -->
+	</div><!-- end of row -->
+</div><!-- end of container -->

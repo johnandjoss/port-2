@@ -1,3 +1,14 @@
 <% content_for :title, "Joss Monster | Post Page" %>
 
-show posts
+<div class="row">
+	<div class="col-lg-12">
+
+	<h3><%= @post.title %></h3>
+
+	<p><%= @post.body %></p>
+
+
+<p><%= link_to "All Posts", posts_path %></p>
+<p><%= link_to "Home", skills_path %></p>
+	</div><!-- end of col-12 -->
+</div><!-- end or row 1 -->
