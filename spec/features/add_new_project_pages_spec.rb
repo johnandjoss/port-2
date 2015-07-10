@@ -1,4 +1,6 @@
 require 'rails_helper'
+include Warden::Test::Helpers
+Warden.test_mode!
 
 describe "the add a project process" do
   it "adds a new project" do

@@ -2,7 +2,7 @@ FactoryGirl.define do
 
 
  factory :user do
-  	name('bob')
+  	name('jocelyn alsdorf')
     sequence(:email) {|n| "test#{n}@example.com" }
     password('12345678')
     
@@ -11,8 +11,7 @@ FactoryGirl.define do
 
   factory(:post) do
     title('fake post')
-    link('www.fake.com')
-    description('Some dumb text')
+    body('some text for a post')
   end
 
 
