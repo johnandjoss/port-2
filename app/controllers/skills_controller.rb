@@ -5,6 +5,10 @@ class SkillsController < ApplicationController
 
   end
 
+  def reference
+    @skills = Skill.all
+  end
+
   def show
     @skill = Skill.find(params[:id])
   end
@@ -41,10 +45,10 @@ class SkillsController < ApplicationController
     @skill.destroy
     redirect_to skills_path
   end
-  
-  def all 
+
+  def all
     @skills = Skill.all
-   end 
+   end
 
   private
   def skill_params

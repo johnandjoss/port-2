@@ -32,7 +32,7 @@ ul {
 }
 .navbar-inverse .navbar-nav > li > a {
   color:#fff;
- 
+
 }
 
 .btn-default {
@@ -41,7 +41,7 @@ ul {
 	border-radius: 3px;
 	display: inline-block;
 	padding: 3px;
-	
+
 }
 p.btn-default a {
 	color: #ffffff;
@@ -87,13 +87,13 @@ p.btn-default {
 	font-size: 26px;
 	text-transform: uppercase;
 	font-family: 'EB Garamond', serif;
-	color:   #37646F;	
+	color:   #37646F;
 }
 .links a {
-	color: #37646F;	
+	color: #37646F;
 }
 .links a:hover {
-	color: #1B2B32;	
+	color: #1B2B32;
 }
 
 .col-md-3.skill-display {
@@ -117,7 +117,7 @@ ul.nav.navbar-nav.navbar-right a {
 
 .project-list {
 	font-size: 20px;
-	
+
 }
 
 .project-items a {
@@ -125,7 +125,7 @@ ul.nav.navbar-nav.navbar-right a {
 	color: #37646F;
 }
 .project-items a:hover {
-	color: #1B2B32;	
+	color: #1B2B32;
 }
 .skill-description {
 	font-size: 20px;
@@ -143,4 +143,24 @@ ul.nav.navbar-nav.navbar-right a {
 
 .all-skills-div {
 	margin-bottom: 30px;
+}
+
+.hidden {
+	display: none;
+}
+.large {
+	height:300px;
+	width: 100%;
+	z-index: 10;
+}
+
+.ref-name {
+	padding-top: 8px;
+}
+
+.ref-div {
+	text-align:center;
+}
+.col-lg-10.well.ref-div {
+  border-color: #B22E2F;
 }
