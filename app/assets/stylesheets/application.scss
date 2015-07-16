@@ -133,7 +133,7 @@ ul.nav.navbar-nav.navbar-right a {
 
 /*--------- form styles ---------------------*/
 .form-titles {
-	font-size: 32px;
+	font-size: 52px;
 	text-transform: uppercase;
 	font-family: 'EB Garamond', serif;
 	color: #B22E2F;
@@ -163,4 +163,21 @@ ul.nav.navbar-nav.navbar-right a {
 }
 .col-lg-10.well.ref-div {
   border-color: #B22E2F;
+}
+
+h3.post-title  {
+	font-size: 55px;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	color:  #B22E2F;
+}
+
+.post-body {
+ padding-top: 20px;
+
+}
+
+.post-content {
+  padding-left: 70px;
+	padding-right: 70px;
 }
